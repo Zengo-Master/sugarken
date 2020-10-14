@@ -6,7 +6,7 @@ league-app
 
 # 本番環境
 ## Heroku
-https://league-table-app.herokuapp.com/
+https://sugarken.herokuapp.com/
 <p>ユーザー名：sugar</p>
 <p>パスワード：7</p>
 
