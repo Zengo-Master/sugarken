@@ -3,7 +3,6 @@
     <h2 class="league-table-title">【リーグ表】<span class="detail">※勝利のマス目をクリックしてね</span></h2>
     <table id="winorlose_table" border="2" bordercolor="black" style="border-collapse: collapse">
       <tr class="top-title">
-        <th class="rank-title">順位</th>
         <th class="player-title">対局者</th>
 
         <% @members.each do |member| %>
@@ -16,7 +15,6 @@
 
       <% @members.each_with_index do |member, i| %>
       <tr class="result-cells">
-        <td id="rank_<%= i + 1 %>"></td>
         <td class="self-name"><%= member.name %></td>
         <td id="op_<%= i + 1 %>_1" data-id="<%= (i * 6) + 1 %>_<%= (6 * (i * 6 + 1)) - (36 * i + (5 - i)) %>"><%= Result.find((i * 6) + 1).result %></td>
         <td id="op_<%= i + 1 %>_2" data-id="<%= (i * 6) + 2 %>_<%= (6 * (i * 6 + 2)) - (36 * i + (5 - i)) %>"><%= Result.find((i * 6) + 2).result %></td>
